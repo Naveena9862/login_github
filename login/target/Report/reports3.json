@@ -1,0 +1,91 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-02-11T07:36:30.960Z",
+        "line": 4,
+        "name": "Successfull login into webpage with valid crtedntials",
+        "description": "",
+        "id": "login-functionality;successfull-login-into-webpage-with-valid-crtedntials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 12193067700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "navigate to home page of that webpage",
+            "match": {
+              "location": "Login_page.navigate_to_home_page_of_that_webpage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 545288300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User valid enters username and password",
+            "match": {
+              "location": "Login_page.user_valid_enters_username_and_password(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "password"
+                ]
+              },
+              {
+                "cells": [
+                  "mercury",
+                  "mercury"
+                ]
+              },
+              {
+                "cells": [
+                  "Rick",
+                  "Rick123"
+                ]
+              },
+              {
+                "cells": [
+                  "Andrew",
+                  "Andrew123"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1159194400,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "it shows message as login successfully",
+            "match": {
+              "location": "Login_page.it_shows_message_as_login_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag1"
+          }
+        ]
+      }
+    ],
+    "name": "Login Functionality",
+    "description": "",
+    "id": "login-functionality",
+    "keyword": "Feature",
+    "uri": "classpath:login/login_to_webpage.feature",
+    "tags": []
+  }
+]
